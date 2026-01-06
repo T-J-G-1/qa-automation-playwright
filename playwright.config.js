@@ -8,9 +8,8 @@ module.exports = defineConfig({
   use: {
     headless: true,
     screenshot: 'only-on-failure',
-    video: 'retain-on-failure',
+    video: 'retain-on-failure'
   },
 
-  reporter: [['list']],
+  reporter: [['list']]
 });
-
