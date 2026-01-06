@@ -1,4 +1,4 @@
-const { test, expect } = require('@playwright/test');
+import { test, expect } from '@playwright/test';
 
 test('Successful login with valid credentials', async ({ page }) => {
   // Navigate to login page
@@ -16,4 +16,3 @@ test('Successful login with valid credentials', async ({ page }) => {
   // Verify successful login message
   await expect(page.locator('#flash')).toContainText('You logged into a secure area!');
 });
-
